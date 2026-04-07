@@ -67,12 +67,15 @@ Users of the present script must first follow the necessary pre-script procedure
 
     In order to send files into the DEV-DV environment, we need to run the following command in the home directory in windows’ powershell (this will not work in the DEV-DV environment, unless you have created an SSH key there as well): 
 
-    Example (all on the same line in powershell): ```scp -r \Users\joe3\PyProject joe3@devdv.scholarsportal.info:/home/joe3/PythonProject/ProjectData``` <br>
+    Example (all on the same line in powershell):<br>
+   ```scp -r \Users\joe3\PyProject joe3@devdv.scholarsportal.info:/home/joe3/PythonProject/ProjectData``` <br>
     (note that if you are sending a singular file, you only need to enter ```scp``` as ```scp -r``` is specifically for copying folders over)
 
-    When we return to our DEV-DV environment, we will find our files copied in the selected directory after refreshing.
+    When we return to our DEV-DV environment, we will find our files copied in the selected directory after refreshing. You can copy files from the linux environment to your local environemnt by reordering the command above. Note that this command must be run in your local shell environment, not the Linux environment:
 
-2) **Updating Python File from Linux shell using vi**: It is likely that the initial python file is not up to date (perhaps you'll have to edit the CSV file path if you are running the python script in batches, or perhaps it has yet to be fine tuned to the current environment). In this step, we will go over how to edit the python file from inside the Linux environment. First we need to navigate to our file and open it using:
+   ```scp -r joe3@devdv.scholarsportal.info:/home/joe3/PythonProject/ProjectData \Users\joe3\PyProject```
+
+3) **Updating Python File from Linux shell using vi**: It is likely that the initial python file is not up to date (perhaps you'll have to edit the CSV file path if you are running the python script in batches, or perhaps it has yet to be fine tuned to the current environment). In this step, we will go over how to edit the python file from inside the Linux environment. First we need to navigate to our file and open it using:
 
     Example: ```vi new_code_rebasing_2026_annotated.py```
 
