@@ -57,10 +57,9 @@ Note that there are two versions of the script:
 
     ```pip install -r requirements.txt```
 
-7) 
 
 
-## File Requirements 📁🐛
+## File Requirements and Manipulation 📁🐛
 Users of the present script must first follow the necessary pre-script procedures described in the [File Organiser and Zipper](https://github.com/letendrt/LFS-EPA-Rebasing-File-Organiser-and-Zipper/tree/main) repository. The present script is relatively useless otherwise. It may only run if the proper file architecture is built ahead of time. If you haven't yet done so, please go and do so now. Once that's done, you may follow the steps below.
 
 1) **Importing Files in DEV-DV Environment**: We will start by importing our python script, as well as the CSV file created by the [File Organiser and Zipper](https://github.com/letendrt/LFS-EPA-Rebasing-File-Organiser-and-Zipper/tree/main) script (of course the CSV may not be entirely complete after running the File Organiser and Zipper - please ensure that you have done your due diligence). We will start by creating a new data directory inside our ```PythonProject``` directory. 
@@ -72,7 +71,16 @@ Users of the present script must first follow the necessary pre-script procedure
     Example (all on the same line in powershell): ```scp -r \Users\joe3\PyProject joe3@devdv.scholarsportal.info:/home/joe3/PythonProject/ProjectData``` <br>
     (note that if you are sending a singular file, you only need to enter ```scp``` as ```scp -r``` is specifically for copying folders over)
 
-    When we return to our DEV-DV environment, we will find our files copied in the selected directory after refreshing. 
+    When we return to our DEV-DV environment, we will find our files copied in the selected directory after refreshing.
+
+2) **Updating Python File from Linux shell using vi**: It is likely that the initial python file is not up to date (perhaps you'll have to edit the CSV file path if you are running the python script in batches, or perhaps it has yet to be fine tuned to the current environment). In this step, we will go over how to edit the python file from inside the Linux environment. First we need to navigate to our file and open it using:
+
+    Example: ```vi new_code_rebasing_2026_annotated.py```
+
+    At this point, the file should now be open. There are two modes you can use to edit and navigate through the file: the ```--INSERT--``` mode (which can be accessed by pressing ```i```), or the command mode (accessed by pressing ```Esc``` or ```Escape```). Note that at this point, you can exit with ```Ctrl + Z```, though the file will still be active in the background. To fully exit without saving progress enter ```:q!```, but make sure to save your changes if any are made (see below).
+
+    Once modifications are made, you can save your progress by entering ```:w```. You can then quit using ```:q```. Alternatively you can save and quit by using the ```:wq```. Entering ```:``` at any time from command mode will prompt users to enter their command. 
+
 
 
 
