@@ -58,7 +58,6 @@ Note that there are two versions of the script:
     ```pip install -r requirements.txt```
 
 
-
 ## File Requirements and Manipulation 📁🐛
 Users of the present script must first follow the necessary pre-script procedures described in the [File Organiser and Zipper](https://github.com/letendrt/LFS-EPA-Rebasing-File-Organiser-and-Zipper/tree/main) repository. The present script is relatively useless otherwise. It may only run if the proper file architecture is built ahead of time. If you haven't yet done so, please go and do so now. Once that's done, you may follow the steps below.
 
@@ -79,7 +78,23 @@ Users of the present script must first follow the necessary pre-script procedure
 
     At this point, the file should now be open. There are two modes you can use to edit and navigate through the file: the ```--INSERT--``` mode (which can be accessed by pressing ```i```), or the command mode (accessed by pressing ```Esc``` or ```Escape```). Note that at this point, you can exit with ```Ctrl + Z```, though the file will still be active in the background. To fully exit without saving progress enter ```:q!```, but make sure to save your changes if any are made (see below).
 
-    Once modifications are made, you can save your progress by entering ```:w```. You can then quit using ```:q```. Alternatively you can save and quit by using the ```:wq```. Entering ```:``` at any time from command mode will prompt users to enter their command. 
+    Once modifications are made, you can save your progress by entering ```:w```. You can then quit using ```:q```. Alternatively you can save and quit by using the ```:wq```. Entering ```:``` at any time from command mode will prompt users to enter their command. Below are some other useful commands to navigate through the file in the Linux environment.
+
+    ```Ctrl + u``` scrolls up (half-screen)<br>
+    ```Ctrl + d``` scrolls down (half-screen)<br>
+    ```Ctrl + b``` scrolls up (full screen)<br>
+    ```Ctrl + f``` scrolls down (full screen)<br>
+
+## Running the Python Script
+we can finally run our script. To run it, first make sure to activate your virtual environment:
+
+Example: ```source env/bin/activate```
+
+From there, you can navigate to the directory of the python and use the following command to run the script:
+
+Example:  ```python new_code_rebasing_2026_annotated.py```
+
+
 
 
 
