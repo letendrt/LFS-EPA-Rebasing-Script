@@ -97,7 +97,11 @@ Example:  ```python new_code_rebasing_2026_annotated.py```
 
 Before doing so, however, you'll need to fetch your Borealis API key. Using ```vi new_code_rebasing_2026_annotated.py```, paste your API key in place of the placeholder text for ```api_token_origin``` on line 34:
 
-<kbd> </kbd>
+<kbd><img width="1034" height="140" alt="image" src="https://github.com/user-attachments/assets/03551aac-e07d-462c-8b4a-54c632f61937" /></kbd>
+
+You'll then have to edit the directory from which the CSV file is retrieved. To do so, navigate all the way down the python file, and modify the ```date``` variable with the path to your CSV file within the Linux environment.
+
+<kbd><img width="1045" height="337" alt="image" src="https://github.com/user-attachments/assets/683f7d27-597e-4cd1-afa7-13c9c578cd61" /></kbd>
 
 
 
