@@ -15,7 +15,7 @@ Note that there are two versions of the script:
 7) Creates individual XML files for each dataset (Quality Control purposes).
 
 ## Python Requirements 🐍🔧
-1) Must be run in SP's Linux DV-DEV environement;
+1) Must be run in SP's Linux DV-DEV environment;
 2) Minimum python version: 3.6+;
 3) Libraries must be installed with binary method (requirements.txt file available in this repository).
 
