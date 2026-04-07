@@ -41,16 +41,39 @@ Note that there are two versions of the script:
 
    The environment can then be activated by entering the following in the command line:
 
-   ```source env/bin/activate```
+    ```source env/bin/activate```
 
-    The environment can then be deactivated by entering ```deactivate``` in the command line. 
+    The environment can then be deactivated by entering ```deactivate``` in the command line.
 
+6) **Importing libraries in virtual env and creating requirements file**: Let’s navigate to our project directory in the DEV-DV environment and activate the python env. Downloading packages here is not work as usual, largely because of our GCC compiler version. Here, we need to import the binary version of the code. For your purposes, if not bringing any modifications to the code, you can simply download the requirements.txt file and skip to the last part of this step. Below is an example for the pandas library.
+
+    Example: ```pip install pandas --only-binary=:all:```
+
+    We will repeat this process for all of our libraries (in our case: Numpy, Pandas, PyDataverse, Pyreadstat, Requests). Once they are all installed, do the following to save them as a requirement file as depicted below:
+
+    ```pip freeze > requirements.txt```
+
+    You can then load them all at once the next time you open your virtual environment by entering the following on the command line:
+
+    ```pip install -r requirements.txt```
+
+7) 
 
 
 ## File Requirements 📁🐛
 Users of the present script must first follow the necessary pre-script procedures described in the [File Organiser and Zipper](https://github.com/letendrt/LFS-EPA-Rebasing-File-Organiser-and-Zipper/tree/main) repository. The present script is relatively useless otherwise. It may only run if the proper file architecture is built ahead of time. If you haven't yet done so, please go and do so now. Once that's done, you may follow the steps below.
 
-1) 
+1) **Importing Files in DEV-DV Environment**: We will start by importing our python script, as well as the CSV file created by the [File Organiser and Zipper](https://github.com/letendrt/LFS-EPA-Rebasing-File-Organiser-and-Zipper/tree/main) script (of course the CSV may not be entirely complete after running the File Organiser and Zipper - please ensure that you have done your due diligence). We will start by creating a new data directory inside our ```PythonProject``` directory. 
+
+    Example:  ```mkdir ProjectData```
+
+    In order to send files into the DEV-DV environment, we need to run the following command in the home directory in windows’ powershell (this will not work in the DEV-DV environment, unless you have created an SSH key there as well): 
+
+    Example (all on the same line in powershell): ```scp -r \Users\joe3\PyProject joe3@devdv.scholarsportal.info:/home/joe3/PythonProject/ProjectData``` <br>
+    (note that if you are sending a singular file, you only need to enter ```scp``` as ```scp -r``` is specifically for copying folders over)
+
+    When we return to our DEV-DV environment, we will find our files copied in the selected directory after refreshing. 
+
 
 
 
