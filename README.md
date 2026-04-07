@@ -21,7 +21,7 @@ Note that there are two versions of the script:
 
 ## Setting up de DEV-DV Environment 🐚🔧
 1) **Creating SSH Key**: Navigate to the Windows command terminal and enter ```ssh-keygen```. Press enter for passphrase (empty passphrase). It will create a ```.ssh``` directory with ```id_rsa``` and ```id_rsa.pub```  files. The ```.ssh``` directory will be a hidden directory. To see it, enter ```cd .ssh``` in the Windows powershell. Your private key will be found in  ```id_rsa``` - **do not show it to anyone**. Your public key is found in ```id_rsa.pub```.
-2) **Formarding Public Key**: Forward your public key to IT. They will add it to the devdv account. Once done (and received the required permissions from IT), follow the following instructions to get started.
+2) **Forwarding Public Key**: Forward your public key to IT. They will add it to the devdv account. Once done (and received the required permissions from IT), follow the following instructions to get started.
 3) **Accessing the virtual environment**: Once permissions are granted, you can access your virtual environment by entering the line below from your powershell home directory (the active one when opening powershell). Depending on who you are (the reader) your user name may be your UTORId. If staff (and not a student) your user ID will be the one you use when logging in your work station.
 
     Example: ```ssh UserName@devdv.scholarsportal.info```
