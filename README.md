@@ -33,8 +33,18 @@ Note that there are two versions of the script:
     Example: ```rmdir *FolderName*``` (if it is an empty directory)<br>
     Example: ```rm -r *FolderName*``` (if the directory is populated)
 
-    Once created navigate to this new folder.
-5) 
+    Once created navigate to this new folder using ```cd *FolderName*```.
+
+5) **Creating the Python Environment in DEV-DV**: Create a python environment in powershell from inside the directory by following the command line below. The default python in dvdev is Python 2.7.5 - this version is relatively old, so we want to make sure we create a virtual environment with a more up-to-date version of python. Follow the command lines below to do so:
+
+   ```/usr/local/bin/python3.11 -m venv env```
+
+   The environment can then be activated by entering the following in the command line:
+
+   ```source env/bin/activate```
+
+    The environment can then be deactivated by entering ```deactivate``` in the command line. 
+
 
 
 ## File Requirements 📁🐛
