@@ -3,4 +3,5 @@ Script used for mass datafile rebasing. This code is necessary to rebase all the
 
 ## Minimum Python Requirements 🐍🔧
 1) Must be run in SP's Linux DV-DEV environement.
-2) Minimum python version: 3.8+.
+2) Minimum python version: 3.6+.
+3) Libraries must be imported with binary method (requirements.txt file is available to users of this repository though). 
