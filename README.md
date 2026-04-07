@@ -85,7 +85,7 @@ Users of the present script must first follow the necessary pre-script procedure
     ```Ctrl + b``` scrolls up (full screen)<br>
     ```Ctrl + f``` scrolls down (full screen)<br>
 
-## Running the Python Script
+## Running the Python Script 🏃‍♂️💨🐍
 we can finally run our script. To run it, first make sure to activate your virtual environment:
 
 Example: ```source env/bin/activate```
