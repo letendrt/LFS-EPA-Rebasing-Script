@@ -90,12 +90,14 @@ Users of the present script must first follow the necessary pre-script procedure
 
 ## Running the Python Script 🏃‍♂️💨🐍
 we can finally run our script. To run it, first make sure to activate your virtual environment:
-
 Example: ```source env/bin/activate```
 
 From there, you can navigate to the directory of the python and use the following command to run the script:
-
 Example:  ```python new_code_rebasing_2026_annotated.py```
+
+Before doing so, however, you'll need to fetch your Borealis API key. Using ```vi new_code_rebasing_2026_annotated.py```, paste your API key in place of the placeholder text for ```api_token_origin``` on line 34:
+
+<kbd> </kbd>
 
 
 
