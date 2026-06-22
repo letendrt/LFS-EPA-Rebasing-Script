@@ -25,7 +25,7 @@ Note that there are two versions of the script:
 3) **Accessing the virtual environment**: Once permissions are granted, you can access the DEV environment by entering the line below in your powershell home directory (the active one when opening powershell). Depending on who you are (the reader) your user name may be your UTORId. If staff (and not a student) your user ID will be the one you use when logging in your work station.
 
     Example: ```ssh UserName@devdv.scholarsportal.info```
-4) **Creating a New Project Folder**: It is good practice to create a new folder when starting a new project (organisation wise). We’ll start by navigating to our user folder by entering ```cd your_username``` in the command line (you can find out what directories are available by entering ```ls``` (LS, in lower case). In this case, I first navigate to my user directory before creating my new project folder. To create a new folder, enter:  ```mkdir name_of_folder```
+4) **Creating a New Project Folder**: It is good practice to create a new folder when starting a new project (organisation wise). We’ll start by navigating to our user folder by entering ```cd *your_username*``` in the command line (you can find out what directories are available by entering ```ls``` (LS, in lower case). In this case, I first navigate to my user directory before creating my new project folder. To create a new folder, enter:  ```mkdir *name_of_folder*```
 
     Example:  ```mkdir PythonProject```
 
